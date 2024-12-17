@@ -1,0 +1,78 @@
+.container {
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.user-card {
+    box-shadow: 0px 4px 14px 0px #000000A6;
+    border: 1px solid #E2E2E2;
+    border-radius: 20px;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome-text {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1C1B1F;
+}
+.unstop-text {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 900;
+    color: #6358DC;
+    width: fit-content;
+}
+.user-name {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #6358DC;
+}
+.user-email {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.52px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--Brand-color-Grey-1100, #383838);
+}
+.user-gender {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.52px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--Brand-color-Grey-1100, #383838);
+}
+.logout-button {
+    background: #6358DC;
+    width: 100%;
+    max-width: 137px;
+    height: 48px;
+    text-align: center;
+    font-family: poppins;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 14.52px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: white;
+    border-radius: 16px;
+    border: none;
+}
