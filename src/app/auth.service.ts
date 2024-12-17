@@ -19,20 +19,27 @@ export class AuthService {
 
     return this.http.post(this.apiUrl, body, { headers });
   }
-  saveToken(token: string) {
-    localStorage.setItem(this.tokenKey, token);
+  saveToken(token: string): void {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.setItem(this.tokenKey, token);
+    }
   }
 
   getToken(): string | null {
-    return localStorage.getItem(this.tokenKey);
+    if (typeof window !== 'undefined' && window.localStorage) {
+      return localStorage.getItem(this.tokenKey);
+    }
+    return null;
   }
 
   isAuthenticated(): boolean {
     return !!this.getToken();
   }
 
-  logout() {
-    localStorage.removeItem(this.tokenKey);
+  logout(): void {
+    if (typeof window !== 'undefined' && window.localStorage) {
+      localStorage.removeItem(this.tokenKey);
+    }
   }
 
 }
